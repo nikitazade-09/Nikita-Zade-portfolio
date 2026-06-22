@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikita Zade | Data Analyst Portfolio</title>
+    <meta name="description" content="Professional portfolio of Nikita Zade, an analytical and detail-oriented Data Analyst. Expert in Power BI, SQL, PostgreSQL, Excel, and Python.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-dot"></span>
+                Nikita Zade
+                <span class="logo-badge">Data Analyst</span>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#dashboard" class="nav-link">Analytics</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link nav-btn">Let's Connect</a>
+            </nav>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-elements">
+            <div class="bg-circle bg-circle-1"></div>
+            <div class="bg-circle bg-circle-2"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-pretitle"><i class="fa-solid fa-chart-line-up"></i> Available for Opportunities</span>
+                <h1 class="hero-title">Aspiring <span class="highlight">Data Analyst</span></h1>
+                <p class="hero-tagline">Electronics & Telecommunication graduate transforming raw datasets into interactive, actionable dashboards and strategic business insights.</p>
+                
+                <div class="hero-metrics">
+                    <div class="hero-metric-item">
+                        <span class="metric-num">1,000+</span>
+                        <span class="metric-lbl">Records Analyzed</span>
+                    </div>
+                    <div class="hero-metric-divider"></div>
+                    <div class="hero-metric-item">
+                        <span class="metric-num">100%</span>
+                        <span class="metric-lbl">Data Accuracy Focus</span>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">Explore Projects <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#resume" class="btn btn-secondary"><i class="fa-solid fa-file-arrow-down"></i> Get Resume</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <!-- Interactive SQL Query and Visualization Terminal Mockup -->
+                <div class="terminal-mockup">
+                    <div class="terminal-header">
+                        <span class="terminal-dot close"></span>
+                        <span class="terminal-dot minimize"></span>
+                        <span class="terminal-dot expand"></span>
+                        <span class="terminal-title">data_analysis.py</span>
+                    </div>
+                    <div class="terminal-body">
+                        <pre><code><span class="t-keyword">import</span> pandas <span class="t-keyword">as</span> pd
+<span class="t-keyword">import</span> matplotlib.pyplot <span class="t-keyword">as</span> plt
+
+<span class="t-comment"># Load dataset</span>
+df = pd.read_csv(<span class="t-string">"business_metrics.csv"</span>)
+
+<span class="t-comment"># Clean and transform data</span>
+cleaned_df = df.dropna().query(<span class="t-string">"revenue > 0"</span>)
+
+<span class="t-comment"># Calculate key metrics</span>
+accuracy = cleaned_df.validate_integrity()
+print(<span class="t-string">f"Data Cleaned. Accuracy: {accuracy:.1%}"</span>)
+>> Data Cleaned. Accuracy: 100.0%
+
+<span class="t-comment"># Generate dashboard visualization</span>
+plt.show_dashboard(cleaned_df)</code></pre>
+                    </div>
+                    <div class="terminal-footer">
+                        <div class="pulse-indicator"></div>
+                        <span class="terminal-status">Running Analysis Environment...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Biography</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-info">
+                    <p class="lead-text">I am an Electronics and Telecommunications Engineering graduate from Nagpur with a strong passion for uncovering the stories hidden within numbers.</p>
+                    <p>My academic foundation in engineering instilled a rigorous problem-solving mindset, which I've channeled into the field of Data Analytics. I specialize in cleaning messy datasets, designing relational database models, and building clean, user-friendly interactive dashboards that make complex insights easily digestible for business leaders and HR managers.</p>
+                    <p>I thrive at the intersection of technical execution and analytical reasoning—whether using Power Query to clean tables, SQL/PostgreSQL for querying, Python for data manipulation, or Excel for rapid analysis.</p>
+                    
+                    <div class="personal-details">
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fa-solid fa-graduation-cap"></i> Degree</span>
+                            <span class="detail-val">B.Tech (Electronics & Telecommunication)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fa-solid fa-envelope"></i> Email</span>
+                            <span class="detail-val"><a href="mailto:zadenikita663@gmail.com">zadenikita663@gmail.com</a></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fa-solid fa-phone"></i> Phone</span>
+                            <span class="detail-val">+91 92842 19408</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fa-solid fa-location-dot"></i> Location</span>
+                            <span class="detail-val">Umred, Maharashtra, India</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-cards">
+                    <div class="about-card shadow-hover">
+                        <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3>Analytical Mindset</h3>
+                        <p>Leveraging engineering concepts to dissect business challenges, optimize data models, and extract structured metrics.</p>
+                    </div>
+                    <div class="about-card shadow-hover">
+                        <div class="card-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                        <h3>Visualization Native</h3>
+                        <p>Believer that a dashboard should speak for itself. Focused on designing visual hierarchies that lead directly to action.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Portfolio Dashboard Section -->
+    <section id="dashboard" class="dashboard-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Data Visualizations</span>
+                <h2 class="section-title">Interactive Analyst Dashboard</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">A real-time snapshot of my technical strengths and project outcomes, visualized using Chart.js. Hover over the nodes and bars to explore details.</p>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="dashboard-card chart-card">
+                    <h3 class="chart-title"><i class="fa-solid fa-chart-radar"></i> Tool & Tech Stack Proficiency</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="skillsRadarChart"></canvas>
+                    </div>
+                </div>
+                <div class="dashboard-card chart-card">
+                    <h3 class="chart-title"><i class="fa-solid fa-chart-simple"></i> Project Metrics & Impact</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="projectMetricsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My Toolkit</span>
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Skill Category 1 -->
+                <div class="skills-category-card shadow-hover">
+                    <div class="category-header">
+                        <div class="cat-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Programming & Frameworks</h3>
+                    </div>
+                    <ul class="skills-list">
+                        <li><span>Python</span> <span class="skill-level">Intermediate</span></li>
+                        <li><span>SQL</span> <span class="skill-level">Intermediate</span></li>
+                        <li><span>Jupyter & Google Colab</span> <span class="skill-level">Intermediate</span></li>
+                        <li><span>Pandas & NumPy</span> <span class="skill-level">Intermediate</span></li>
+                        <li><span>Matplotlib & Seaborn</span> <span class="skill-level">Intermediate</span></li>
+                        <li><span>Scikit-learn</span> <span class="skill-level">Basic</span></li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="skills-category-card shadow-hover">
+                    <div class="category-header">
+                        <div class="cat-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3>Databases & Version Control</h3>
+                    </div>
+                    <ul class="skills-list">
+                        <li><span>PostgreSQL</span> <span class="skill-level">Intermediate</span></li>
+                        <li><span>PgAdmin4</span> <span class="skill-level">Intermediate</span></li>
+                        <li><span>GitHub</span> <span class="skill-level">Intermediate</span></li>
+                        <li><span>VS Code</span> <span class="skill-level">Advanced</span></li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="skills-category-card shadow-hover">
+                    <div class="category-header">
+                        <div class="cat-icon"><i class="fa-solid fa-table"></i></div>
+                        <h3>BI Tools & Analytics</h3>
+                    </div>
+                    <ul class="skills-list">
+                        <li><span>Microsoft Excel</span> <span class="skill-level">Advanced</span></li>
+                        <li><span>Power BI</span> <span class="skill-level">Intermediate</span></li>
+                        <li><span>Power Query & DAX</span> <span class="skill-level">Intermediate</span></li>
+                        <li><span>Data Scraping</span> <span class="skill-level">Intermediate</span></li>
+                        <li><span>Prompt Engineering</span> <span class="skill-level">Intermediate</span></li>
+                        <li><span>Vibe Coding</span> <span class="skill-level">Intermediate</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Academic Credentials</span>
+                <h2 class="section-title">Education</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content shadow-hover">
+                        <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2022 – 2026</span>
+                        <h3>Bachelor of Technology</h3>
+                        <p class="timeline-subtitle">Electronics & Telecommunication Engineering</p>
+                        <p class="timeline-org">Priyadarshini J L College of Engineering, Nagpur</p>
+                        <div class="timeline-metric">CGPA: 7.68 / 10.00</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content shadow-hover">
+                        <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2022</span>
+                        <h3>Higher Secondary Certificate (XII)</h3>
+                        <p class="timeline-subtitle">Science & Mathematics</p>
+                        <p class="timeline-org">Ashok Junior & Higher Secondary College, Umred</p>
+                        <div class="timeline-metric">Percentage: 72.50%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Professional Background</span>
+                <h2 class="section-title">Internship Experience</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="experience-card shadow-hover">
+                <div class="experience-badge"><i class="fa-solid fa-laptop-code"></i> Active</div>
+                <div class="experience-header">
+                    <div class="exp-role-title">
+                        <h3>Data Analytics Intern</h3>
+                        <span class="exp-company">Vigo Technoworld Pvt Ltd</span>
+                    </div>
+                    <span class="exp-duration"><i class="fa-solid fa-calendar-days"></i> September 2025 – Present</span>
+                </div>
+                
+                <div class="experience-body">
+                    <p class="exp-summary">Acquiring intensive hands-on experience in business data workflows, starting from data ingestion, ETL processing, database querying, to generating visualizations for decision support.</p>
+                    <ul class="exp-bullets">
+                        <li><i class="fa-solid fa-circle-check"></i> Trainee in advanced Microsoft Excel, PostgreSQL, Power BI, and Python.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Conducting data extraction, scrubbing, and mapping using web data scraping tools.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Developing data visualization dashboards to present key metrics in a comprehensive, user-friendly format.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Practicing data transformation workflows using Power Query, SQL subqueries, and Python scripting libraries.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Featured Work</span>
+                <h2 class="section-title">Analytics Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="powerbi"><i class="fa-solid fa-chart-column"></i> Power BI</button>
+                <button class="filter-btn" data-filter="excel"><i class="fa-solid fa-file-excel"></i> Excel</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: Power BI -->
+                <div class="project-card shadow-hover" data-category="powerbi">
+                    <div class="project-image-placeholder">
+                        <div class="proj-img-content">
+                            <i class="fa-solid fa-chart-pie font-large"></i>
+                            <div class="spark-line">
+                                <span class="bar bar-1"></span>
+                                <span class="bar bar-2"></span>
+                                <span class="bar bar-3"></span>
+                                <span class="bar bar-4"></span>
+                                <span class="bar bar-5"></span>
+                            </div>
+                        </div>
+                        <span class="project-type-tag">Power BI</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>HR Analytics Dashboard</h3>
+                        <p class="project-desc">Designed an interactive dashboard to evaluate workforce demographics, active headcount, and employee records for enterprise management.</p>
+                        
+                        <div class="project-outcomes">
+                            <h4><i class="fa-solid fa-circle-info"></i> Key Outcomes:</h4>
+                            <ul>
+                                <li>Analyzed <strong>1,000+ employee records</strong> across 6+ business dimensions.</li>
+                                <li>Achieved <strong>100% data validation accuracy</strong> via Power Query formatting & cleanups.</li>
+                                <li>Enhanced decision-making workflows with <strong>8+ interactive, dynamic indicators</strong>.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-tags">
+                            <span>Power BI</span>
+                            <span>Power Query</span>
+                            <span>DAX Modeling</span>
+                            <span>ETL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Excel -->
+                <div class="project-card shadow-hover" data-category="excel">
+                    <div class="project-image-placeholder excel-bg">
+                        <div class="proj-img-content">
+                            <i class="fa-solid fa-chart-line font-large"></i>
+                            <div class="spark-line excel-spark">
+                                <span class="bar bar-1"></span>
+                                <span class="bar bar-2"></span>
+                                <span class="bar bar-3"></span>
+                                <span class="bar bar-4"></span>
+                                <span class="bar bar-5"></span>
+                            </div>
+                        </div>
+                        <span class="project-type-tag Excel">Excel</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cricket Performance Analysis</h3>
+                        <p class="project-desc">Structured a performance dashboard to evaluate matches, team metrics, and player performance parameters across historical seasons.</p>
+                        
+                        <div class="project-outcomes">
+                            <h4><i class="fa-solid fa-circle-info"></i> Key Outcomes:</h4>
+                            <ul>
+                                <li>Consolidated raw cricket match data (runs, wickets, strike-rates, configurations).</li>
+                                <li>Created lookup pipelines with functions (<code>VLOOKUP</code>, <code>IFERROR</code>, <code>TEXT TO COLUMNS</code>).</li>
+                                <li>Built interactive Excel charts to visualize key performance indicators (KPIs) easily.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-tags">
+                            <span>MS Excel</span>
+                            <span>Data Cleaning</span>
+                            <span>VLOOKUP & Formulas</span>
+                            <span>Dashboards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Achievements Section -->
+    <section id="certifications" class="certifications-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Credentials & Milestones</span>
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="certifications-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card shadow-hover">
+                    <div class="cert-icon-box"><i class="fa-solid fa-certificate"></i></div>
+                    <div class="cert-details">
+                        <span class="cert-date">June 2026</span>
+                        <h3>Generative AI & Agentic AI Internship</h3>
+                        <p class="cert-provider">Techobytes Technologies (In collaboration with IISc Bengaluru Student Council)</p>
+                        <p class="cert-desc">Intensive 5-day training focusing on Agentic workflows, prompt customization, Python-based LLM scripting, and artificial intelligence tool deployments.</p>
+                    </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card shadow-hover">
+                    <div class="cert-icon-box"><i class="fa-solid fa-certificate"></i></div>
+                    <div class="cert-details">
+                        <span class="cert-date">August 2025</span>
+                        <h3>Employability Skill Training Programme</h3>
+                        <p class="cert-provider">Mahindra Pride Classroom & Naandi Foundation</p>
+                        <p class="cert-desc">Professional development workshop covering advanced communications, structured analytical presentation skills, and collaborative team leadership strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Download Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <div class="resume-card">
+                <div class="resume-card-bg"></div>
+                <div class="resume-content">
+                    <div class="resume-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                    <h2>Need an ATS-Friendly Resume?</h2>
+                    <p>Get a comprehensive copy of my background, skills, and projects formatted directly for recruitment systems. Ready to read, print, or share.</p>
+                    
+                    <div class="resume-download-actions">
+                        <a href="Nikita_Zade_Resume.docx" class="btn btn-white-primary" download><i class="fa-solid fa-file-word"></i> Download DOCX Version</a>
+                        <span class="resume-or">OR</span>
+                        <a href="Nikita_Zade_Resume.pdf" class="btn btn-white-secondary" download><i class="fa-solid fa-file-pdf"></i> Download PDF Version</a>
+                    </div>
+                    <p class="resume-note"><i class="fa-solid fa-circle-info"></i> The DOCX file is Nikita's official editable resume copied directly from the system storage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Reach Out</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info-panel">
+                    <h3>Contact Information</h3>
+                    <p>Have an open opportunity, a dataset to analyze, or want to discuss analytics projects? Drop a message or reach out via social profiles.</p>
+                    
+                    <div class="contact-links-list">
+                        <a href="mailto:zadenikita663@gmail.com" class="contact-link-item shadow-hover">
+                            <div class="cli-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4>Email Me</h4>
+                                <p>zadenikita663@gmail.com</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://linkedin.com/in/nikita-zade-4324812b60" target="_blank" rel="noopener" class="contact-link-item shadow-hover">
+                            <div class="cli-icon"><i class="fa-brands fa-linkedin"></i></div>
+                            <div>
+                                <h4>LinkedIn Profile</h4>
+                                <p>linkedin.com/in/nikita-zade-4324812b60</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/nikitazade09" target="_blank" rel="noopener" class="contact-link-item shadow-hover">
+                            <div class="cli-icon"><i class="fa-brands fa-github"></i></div>
+                            <div>
+                                <h4>GitHub Profile</h4>
+                                <p>github.com/nikitazade09</p>
+                            </div>
+                        </a>
+
+                        <div class="contact-link-item shadow-hover">
+                            <div class="cli-icon"><i class="fa-solid fa-location-arrow"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Umred, Maharashtra - 441203</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-panel shadow-hover">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm" action="#">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required placeholder="Data Analyst Opportunity">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="Tell me about your project or job opening..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Feedback Modal -->
+    <div id="successModal" class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-success-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h2>Message Sent Successfully!</h2>
+            <p>Thank you for reaching out, Nikita will get back to you as soon as possible.</p>
+            <button id="closeModalBtn" class="btn btn-primary">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-left">
+                <span class="logo">Nikita Zade</span>
+                <p>Aspiring Data Analyst. Transforming datasets into strategic assets.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#dashboard">Analytics</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Nikita Zade. All rights reserved. Made for professional analytics portfolios.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
